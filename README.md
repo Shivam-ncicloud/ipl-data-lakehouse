@@ -12,10 +12,22 @@ This project processes **IPL cricket datasets** from 2008–2020 and follows the
 
 ## 🧱 Architecture: Medallion Framework
 
-```mermaid
-graph TD
-    A[Raw Data (GitHub + Local)] --> B[ADF - Data Ingestion]
-    B --> C[ADLS Gen2 - Bronze Layer]
-    C --> D[Databricks - Silver Layer]
-    D --> E[Databricks - Gold Layer + ML]
-    E --> F[Power BI Dashboard]
+[Raw Data]
+
+(GitHub + Local)
+        |
+        v
+[ADF - Data Ingestion]
+        |
+        v
+[ADLS Gen2 - Bronze Layer]
+        |
+        v
+[Azure Databricks - Silver Layer]
+        |
+        v
+[Azure Databricks - Gold Layer + ML]
+        |
+        v
+[Power BI Dashboard]
+
