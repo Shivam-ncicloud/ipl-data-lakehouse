@@ -31,3 +31,6 @@ This project processes **IPL cricket datasets** from 2008–2020 and follows the
         v
 [Power BI Dashboard]
 
+
+![Medallion Architecture](images/medallion_architecture.png)
+
